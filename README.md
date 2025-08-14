@@ -371,5 +371,5 @@ Specify your license here.
     -Leader : Mr.Brijesh
     -Member1: Ankit Kumar Sahoo
     -Member2: Suhani Shroff
-    -Member3: Shrisht dev
+    -Member3: Shrisht dev (shrishtdev@gmail.com)
 ---
