@@ -366,8 +366,9 @@ Specify your license here.
 
 *For more details or support, contact the Corexfin development team. *
 ---
-#Team : Tecresearch
-Leader: Mr.Brijesh
-Member1: Ankit Kumar Sahoo
-Member 2: Suhani Shroff
+# Company : `HCLTech` 
+  ## Team : `Corexfin`
+    -Leader : Mr.Brijesh
+    -Member1: Ankit Kumar Sahoo
+    -Member2: Suhani Shroff
 ---
