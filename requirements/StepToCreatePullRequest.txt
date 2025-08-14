@@ -1,0 +1,46 @@
+
+# Steps to Create a Pull Request for Corexfin on GitHub
+---
+## Fork the Repository:
+---
+-Go to the Corexfin GitHub repository and click on the "Fork" button at the top right corner to create a copy of the repository under your GitHub account.
+Clone Your Fork:
+---
+-Clone your forked repository to your local machine by running:
+`git clone https://github.com/<your-username>/corexfin.git`
+Replace <your-username> with your GitHub username.
+Make Changes:
+
+-Navigate to the cloned repository directory:
+`cd corexfin`
+Make the necessary changes to the project files.
+Check Status:
+
+-Use the following command to check the status of your changes:
+`git status`
+Add Changes:
+
+## Stage your changes with:
+`git add .`
+Commit Changes:
+
+## Commit your changes with:
+`git commit -m "Your changes message"`
+Sync with the Original Repository:
+
+## Before pushing, sync your fork with the original repository to avoid merge conflicts:
+`git remote add upstream https://github.com/tecresearch/corexfin.git`
+-git pull upstream main
+-Make sure to replace main with the correct default branch name if it's different (like master).
+Push Changes:
+
+## Push your changes to your forked repository:
+`git push origin main`
+-Ensure you replace main with your branch name if you're not pushing to the main branch.
+Create a Pull Request:
+
+## Go to your forked repository on GitHub.
+-Navigate to the "Pull Requests" section and click on "New Pull Request".
+-Select the branch with your changes and compare it against the tecresearch:main branch.
+-Follow the prompts to create the pull request, providing a description of your changes.
+-Submit the pull request and wait for review and approval.
