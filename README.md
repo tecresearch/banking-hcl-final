@@ -370,6 +370,6 @@ Specify your license here.
   ## Team : `Corexfin`
     -Leader : Mr.Brijesh (bnlv1212@gmail.com)
     -Member1: Ankit Kumar Sahoo
-    -Member2: Suhani Shroff (email: suhanishroff03@gmail.com)
+    -Member2: Suhani Shroff (suhanishroff03@gmail.com)
     -Member3: Shrisht dev (shrishtdev@gmail.com)
 ---
