@@ -364,7 +364,10 @@ Specify your license here.
 
 ---
 
-*For more details or support, contact the Corexfin development team. *
+*For more details or support, contact the Corexfin development team.*
+---
+# Contact
+---
 Team : Tecresearch
 Leader: Mr.Brijesh
-Member1: Ankit Kumar Sahoo
+Member1: Ankit Kumar Sahoo (sahooankitkumar7@gmail.com)
