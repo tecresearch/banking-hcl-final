@@ -369,7 +369,7 @@ Specify your license here.
 # Company : `HCLTech` 
   ## Team : `Corexfin`
     -Leader : Mr.Brijesh (bnlv1212@gmail.com)
-    -Member1: Ankit Kumar Sahoo
+    -Member1: Ankit Kumar Sahoo (sahooankitkumar7@gmail.com)
     -Member2: Suhani Shroff (suhanishroff03@gmail.com)
     -Member3: Shrisht dev (shrishtdev@gmail.com)
 ---
