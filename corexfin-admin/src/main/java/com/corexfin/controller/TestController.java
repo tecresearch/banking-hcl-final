@@ -6,23 +6,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/test")
 public class TestController {
-    @GetMapping("/register")
-    public String login() {
-        return "register success";
+
+    @GetMapping("/admin")
+    public ResponseEntity<Map<String,Object>> test() {
+        Map<String,Object> map = new HashMap<>();
+        map.put("status","running");
+        map.put("message","admin service is running");
+        return ResponseEntity.status(HttpStatus.OK).body(map);
     }
-   @GetMapping("/greeting")
-   public String greet() {
-       return "good evening";
-   }
-
-   @GetMapping("/info")
-public ResponseEntity<?>getInfo(){
-        return ResponseEntity.status(HttpStatus.OK).body("api-gateway and database configuration");
-   }
-
-
-
 }
