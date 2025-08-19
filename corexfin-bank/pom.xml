@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.corexfin</groupId>
-    <artifactId>corexfin-admin</artifactId>
+    <artifactId>corexfin-bank</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>corexfin-admin</name>
-    <description>corexfin-admin</description>
+    <name>corexfin-bank</name>
+    <description>corexfin-bank</description>
     <url/>
     <licenses>
         <license/>
