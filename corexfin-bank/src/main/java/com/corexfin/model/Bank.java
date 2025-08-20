@@ -42,7 +42,7 @@ public class Bank {
 
     public Bank(String name, String domain, String username, String password, String owner, String email, String office, String status, String role) {
         this.name = name;
-        domain = domain;
+        this.domain = domain;
         this.username = username;
         this.password = password;
         this.owner = owner;
@@ -73,7 +73,7 @@ public class Bank {
     }
 
     public void setDomain(String domain) {
-        domain = domain;
+        this.domain = domain;
     }
 
     public String getUsername() {
