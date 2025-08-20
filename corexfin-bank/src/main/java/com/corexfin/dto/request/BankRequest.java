@@ -6,7 +6,7 @@ public record BankRequest(
  String username,
  String password,
  String owner,
-  String email,
+ String email,
  String office,
  String status,
  String role
