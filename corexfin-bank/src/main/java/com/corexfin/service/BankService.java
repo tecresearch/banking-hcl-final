@@ -17,6 +17,6 @@ public interface BankService {
         public List<Bank> getAllBankFromCorexfin();
         public BankResponse updateBankTOCorexfin(BankRequest bankRequest, WebRequest webRequest);
         public BankResponse updateBankTOCorexfinByEmail(String email, WebRequest webRequest);
-        public void deleteBankFromCorexfinById(String bankId);
+        public BankResponse deleteBankFromCorexfinById(String bankId);
 
 }

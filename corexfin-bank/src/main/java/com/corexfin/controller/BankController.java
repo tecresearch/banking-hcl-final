@@ -6,6 +6,7 @@ import com.corexfin.service.BankService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.ResponseEntity.BodyBuilder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.WebRequest;
 
@@ -58,6 +59,15 @@ public class BankController {
             BankResponse response= bankService.addAdminBankInCorexfin(bankRequest, webRequest);
             return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
+<<<<<<< HEAD
+    @DeleteMapping("/delete/{bankId}")
+    public ResponseEntity<BankResponse> deleteBankFromCorexfinById(@PathVariable String bankId) {
+
+
+            BankResponse response= bankService.deleteBankFromCorexfinById(bankId);
+            System.out.println(response);
+        	return  ResponseEntity.status(HttpStatus.OK).body(response);
+=======
     
     // Rest Api to get all Banks
     
@@ -65,6 +75,7 @@ public class BankController {
     public ResponseEntity<List<Bank>> getAllBank(){
     	
     	return ResponseEntity.status(HttpStatus.OK).body(bankService. getAllBankFromCorexfin());
+>>>>>>> b8b23bcbae49169b8809887e6316d05de6a35421
     }
 
 
