@@ -1,29 +1,22 @@
 package com.corexfin.service.impl;
 
+import java.sql.Timestamp;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
+import org.springframework.web.context.request.WebRequest;
+
 import com.corexfin.dto.request.BankRequest;
 import com.corexfin.dto.response.BankResponse;
 import com.corexfin.model.Bank;
 import com.corexfin.repository.BankRepository;
 import com.corexfin.service.BankService;
-
-import jakarta.persistence.EntityNotFoundException;
-
-import org.hibernate.Session;
-import org.hibernate.annotations.Comments;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-import org.springframework.web.context.request.WebRequest;
-
-import java.sql.Timestamp;
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
 
 
 @Service
@@ -179,9 +172,7 @@ public class BankServiceImpl implements BankService {
      */
     @Override
     public BankResponse deleteBankFromCorexfinById(String bankId) {
-<<<<<<< HEAD
-    return null;
-=======
+
     		try {
     			Optional<Bank> bankOptional=bankRepository.findById(bankId);
     			if(bankOptional.isEmpty()) {
@@ -241,13 +232,13 @@ public class BankServiceImpl implements BankService {
 				return bankresponse_internal_server_error;
     		}
     		
->>>>>>> 4786cf3c59113d45eac3273b389a0f6bb4b08de2
     }
     /**
      * {@summary : This function delete a bank using bank ID. First we are getting the Bank by bank Id, if 
      * we found bank ID then a custom message i was sending using BankResponse with status}
      */
 
+	 
 }
 
 // @Component
