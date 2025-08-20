@@ -38,6 +38,7 @@ public class BankServiceImpl implements BankService {
 
            Bank bank = new Bank();
            /**
+            * @Author Team Leader : Brijesh Nishad
             * BankRequest
             *  String name,
             *  String Domain,
@@ -61,6 +62,7 @@ public class BankServiceImpl implements BankService {
            bank.setRole(bankRequest.role());//admin
 
            /**
+            *  @Author Team Leader : Brijesh Nishad
             *      inser into bank values (
             *     "name": "Hex Bank",
             *   "Domain": "example.com",
@@ -80,6 +82,7 @@ public class BankServiceImpl implements BankService {
 
 
            /**
+            *  @Author Team Leader : Brijesh Nishad
             * String message,
             * boolean status,
             * int httpStatus,
@@ -117,19 +120,28 @@ public class BankServiceImpl implements BankService {
         return List.of();
     }
 
+    /**
+     * @Author Team Leader : Brijesh Nishad
+     * @param bankRequest details to be updated
+     * @param webRequest to getDescription of path
+     * @return BankResponse
+     */
     @Override
-    public BankResponse updateBankTOCorexfin(BankRequest bankRequest, WebRequest webRequest) {
+    public BankResponse updateBankTOCorexfinById(String bankId,BankRequest bankRequest, WebRequest webRequest) {
+
+        Bank existingBank =bankRepository.findById(bankId).orElseThrow();
+
         return null;
     }
 
     @Override
-    public BankResponse updateBankTOCorexfinByEmail(String email, WebRequest webRequest) {
+    public BankResponse updateBankTOCorexfinByEmail(String email,BankRequest bankRequest, WebRequest webRequest) {
         return null;
     }
 
     @Override
-    public void deleteBankFromCorexfinById(String bankId) {
-
+    public BankResponse deleteBankFromCorexfinById(String bankId) {
+    return null;
     }
 
 
