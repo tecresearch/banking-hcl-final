@@ -9,14 +9,19 @@ import com.corexfin.service.BankService;
 import jakarta.persistence.EntityNotFoundException;
 
 import org.hibernate.Session;
+import org.hibernate.annotations.Comments;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.request.WebRequest;
 
 import java.sql.Timestamp;
 import java.time.Instant;
 import java.time.LocalDateTime;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -76,7 +81,7 @@ public class BankServiceImpl implements BankService {
             *   "office": "Main HQ",
             *   "status": "active",
             *   "role": "admin"
-            *
+            *        
             *      );
             *
             */
@@ -117,9 +122,32 @@ public class BankServiceImpl implements BankService {
         return null;
     }
 
+   /**
+    * @author shrisht.dev
+    * Sort Banks by id of last digit using Lambda expression Comaprator Concept
+    */
     @Override
     public List<Bank> getAllBankFromCorexfin() {
-        return List.of();
+//        return bankRepository.findAll(Sort.by("id"));
+    	
+    	 List<Bank> data=bankRepository.findAll(); 
+    	  Collections.sort(data,(o1,o2)->{
+    		  
+    		  
+    		 String a=o1.getId();
+    		 String aId[]=a.split("-");
+    		 String toBeSortIda=aId[aId.length-1];
+    		 
+    		 
+    		 String b=o2.getId();
+    		 String bId[]=b.split("-");
+    		 String toBeSortIdb=bId[bId.length-1];
+    		  
+    		  return toBeSortIda.compareTo(toBeSortIdb);
+    	  });
+    	  
+    	  return data;
+    	 
     }
 
     @Override
@@ -205,3 +233,15 @@ public class BankServiceImpl implements BankService {
      */
 
 }
+
+// @Component
+//class Mycomparator implements Comparator<Bank>{
+//
+//	@Override
+//	public int compare(Bank o1, Bank o2) {
+//		
+//		return o2.getName().compareTo(o1.getName());
+//	}
+//	
+//	  
+//}

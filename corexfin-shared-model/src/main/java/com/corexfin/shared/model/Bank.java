@@ -1,9 +1,4 @@
-package com.corexfin.model;
-
-import com.corexfin.pk_id_generator.BankIdGenerator;
-import jakarta.persistence.*;
-import org.hibernate.annotations.GenericGenerator;
-
+package com.corexfin.shared.model;
 import java.util.Objects;
 
 /**
@@ -11,38 +6,33 @@ import java.util.Objects;
  *
  *
  */
-@Entity
-@Table(name = "bank")
+
 public class Bank {
-    @Id
-    @GeneratedValue(generator = "bank_uuid")
-    @GenericGenerator(name="bank_uuid",type= BankIdGenerator.class)
-    @Column(name = "bank_id", unique = true)
+
     private String id;
-    @Column(name="bank_name")
     private String name;
-    @Column(name="bank_domain")
+
     private String domain;
-    @Column(name="bank_username")
+
     private String username;
-    @Column(name="bank_password")
+
     private String password;
-    @Column(name="bank_owner")
+
     private String owner;
-    @Column(name="bank_email")
+
     private String email;
-    @Column(name="head_office")
+
     private String office;
-    @Column(name="bank_status")
+
     private String status;
-    @Column(name = "bank_role")
+
     private String role;
 
     public Bank(){}
 
     public Bank(String name, String domain, String username, String password, String owner, String email, String office, String status, String role) {
         this.name = name;
-        this.domain = domain;
+        domain = domain;
         this.username = username;
         this.password = password;
         this.owner = owner;
@@ -73,7 +63,7 @@ public class Bank {
     }
 
     public void setDomain(String domain) {
-        this.domain = domain;
+        domain = domain;
     }
 
     public String getUsername() {
