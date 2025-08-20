@@ -197,7 +197,11 @@ public class BankServiceImpl implements BankService {
     			bankresponse_internal_server_error.setId(bankId);
 				return bankresponse_internal_server_error;
     		}
+    		
     }
-
+    /**
+     * {@summary : This function delete a bank using bank ID. First we are getting the Bank by bank Id, if 
+     * we found bank ID then a custom message i was sending using BankResponse with status}
+     */
 
 }
