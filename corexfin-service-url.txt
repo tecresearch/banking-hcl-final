@@ -1,0 +1,9 @@
+http://localhost:8761/   : corexfin-registry-server
+http://localhost:9090/	 : corexfin-api-gateway
+
+http://localhost:9090/corexfin-admin --->  http://localhost:8000/test/admin	 : corexfin-admin
+
+http://localhost:9090/corexfin-auth/---> http://localhost:8001/test/login   : corexfin-auth
+
+http://localhost:9090/corexfin-user/---> http://localhost:8002/   : corexfin-user
+

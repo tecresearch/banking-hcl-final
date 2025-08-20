@@ -1,0 +1,83 @@
+Hex Bank Of India : I need banking Services : Dev(CEO)
+Corexfin :I Have banking solutions Brijesh(CEO)
+Dev : What is process aquire you service ?
+Brijesh : Step 1 : You must have to create corexfin_account to use our services at corexfin.com/corexfin-access-portal/bank/admin/register ?
+Dev : Ok I am filling the form 
+Bank Owner Name(Dev), username , password , Bank Name(Hex) , Bank Owner Email(Dev@hexbank.com),Bank Owner Phone , Bank Head Office, admin role
+processing...
+details saving ...
+corexfin_id generating ...
+congratulations Mr.Dev your corexfin_id 258376919 successfully generated and now you can use our services Mr.Dev
+Dev : I have done registration i want login to see services.
+Brijesh : Ok , Basically we provide core banking services like Bank Branch Management, Bank Employee Management, Transaction Management .If you want to use our service you can login with your corexfin username and password  at corexfin.com/bank/corexfin-access-portal/admin/login .
+Dev : Entered corexfin_username and password : Login clicked 
+login processing .... username and paswword authenticated :  token generating.....
+you have logged in successfully : jwt token: ebrzewiejdiofcontenttype.eijr903435usenamepasowedroleadmin.tgergeggthh
+________________________________________________________________________________________________________________________________________________________________________________
+Corexfin           Bank Branch Management                                                                                                                                                                                                Dev : HEX Bank : Loggedin
+________________________________________________________________________________________________________________________________________________________________________________
+Dev : clicked on Branch management : Add Branch: branch_username : hex_greater_noida, password :-> Branch_id generated , Get Branch (branch id),delete Branch(branch_id),update Branch(branch_id):like change the manager
+________________________________________________________________________________________________________________________________________________________________________________
+Get All Branch : corexfin.com/bank/admin/branches
+branch_id	bank_id	branch_name	ifsc_code	address	branch_manager_id
+BR001	hex1245	Noida Sector 62	HEXB000001	Tower A, Sector 62, Noida, UP	USR101
+BR002	hex1245	Connaught Place	HEXB000002	Block B, CP, New Delhi, Delhi	USR102
+Get Manager detail : corexfin.com/corexfin-access-portal/bank/user/USR101 
+USR101
+USR101	Priya 	manager	priya@hexbank.com
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dev: I have  Logged out  and Thank Brijesh I have test your  corexfin-access portal where i added 2 branch and those branches uses your transaction service, customer management service.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ankit : Logged In at corexfin.com/ corexfin-access-portal/bank/user/login
+_______________________________________________________________________________________________________________________________________________________________________________
+Corexfin        Customer Management | Transaction Management | Notification                                                                                                                          Priya Sharma : Hex Bank : Loggedin
+_______________________________________________________________________________________________________________________________________________________________________________
+Ankit : clicked on Customer management : Add Customer: customer_username : suhani, password : internet_status:false ,-> cust_id generated , Get cust(cust_id),delete cust(br_id),update cust(cust_id) : approve internet banking
+________________________________________________________________________________________________________________________________________________________________________________
+Ankit Logged out : I have use all service that is better.
+________________________________________________________________________________________________________________________________________________________________________________
+Suhani  : Logged In at corexfin.com/ corexfin-access-portal/bank/customer/login
+________________________________________________________________________________________________________________________________________________________________________________
+Corexfin        Transaction Management | Notification                                                                                                                                                                          Suhani : Hex Bank : Loggedin
+_______________________________________________________________________________________________________________________________________________________________________________
+Suhani: clicked on Transaction management :
+Check Balance Deposit Withdrawl Money transfer ,account transfer(source_Branch_id,dest_Branch_id),statement(account no)
+­­-------------------------------------------------------------
+🧾 Suhani's Sample Bank Statement
+Account Holder: Suhani 
+Account Number: 123456789012
+Bank Name: Hex Bank
+Branch: Noida Sector 62
+IFSC Code: HEXB000001
+Statement Period: 01 July 2025 – 31 July 2025
+
+Date	Description	Debit (₹)	Credit (₹)	Balance (₹)
+01-Jul-25	Opening Balance			25,000.00
+03-Jul-25	ATM Withdrawal	5,000.00		20,000.00
+05-Jul-25	Salary Credit		50,000.00	70,000.00
+08-Jul-25	Online Shopping (Amazon)	2,499.00		67,501.00
+12-Jul-25	Electricity Bill Payment	1,200.00		66,301.00
+15-Jul-25	UPI Transfer to Rahul	3,000.00		63,301.00
+20-Jul-25	Interest Credit		150.00	63,451.00
+25-Jul-25	Mobile Recharge	399.00		63,052.00
+30-Jul-25	Grocery Store (Big Bazaar)	2,100.00		60,952.00
+31-Jul-25	Closing Balance	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
