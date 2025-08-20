@@ -21,7 +21,6 @@ import java.sql.Timestamp;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -115,17 +114,18 @@ public class BankServiceImpl implements BankService {
 
     }
 
-    @Override
-    public Bank getBankFromCorexfinById(String bankId) {
-        return null;
-    }
+	@Override
+	public Bank getBankFromCorexfinById(String bankId) {
+		return null;
+	}
 
-    @Override
-    public Bank getBankFromCorexfinByName(String bankName) {
-        return null;
-    }
+	@Override
+	public Bank getBankFromCorexfinByName(String bankName) {
+		return null;
+	}
 
-   /**
+
+	/**
     * @author shrisht.dev
     * Sort Banks by id of last digit using Lambda expression Comaprator Concept
     */
@@ -179,9 +179,6 @@ public class BankServiceImpl implements BankService {
      */
     @Override
     public BankResponse deleteBankFromCorexfinById(String bankId) {
-<<<<<<< HEAD
-    return null;
-=======
     		try {
     			Optional<Bank> bankOptional=bankRepository.findById(bankId);
     			if(bankOptional.isEmpty()) {
@@ -240,8 +237,7 @@ public class BankServiceImpl implements BankService {
     			bankresponse_internal_server_error.setId(bankId);
 				return bankresponse_internal_server_error;
     		}
-    		
->>>>>>> 4786cf3c59113d45eac3273b389a0f6bb4b08de2
+
     }
     /**
      * {@summary : This function delete a bank using bank ID. First we are getting the Bank by bank Id, if 

@@ -19,23 +19,23 @@ public class Bank {
     @GenericGenerator(name="bank_uuid",type= BankIdGenerator.class)
     @Column(name = "bank_id", unique = true)
     private String id;
-    @Column(name="bank_name")
+    @Column(name="bank_name",unique = true)
     private String name;
-    @Column(name="bank_domain")
+    @Column(name="bank_domain",unique = true)
     private String domain;
-    @Column(name="bank_username")
+    @Column(name="bank_username",unique = true)
     private String username;
     @Column(name="bank_password")
     private String password;
     @Column(name="bank_owner")
     private String owner;
-    @Column(name="bank_email")
+    @Column(name="bank_email",unique = true)
     private String email;
-    @Column(name="head_office")
+    @Column(name="head_office",unique = true)
     private String office;
     @Column(name="bank_status")
     private String status;
-    @Column(name = "bank_role")
+    @Column(name = "bank_role",unique = true)
     private String role;
 
     public Bank(){}
