@@ -6,6 +6,7 @@ import com.corexfin.service.BankService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.ResponseEntity.BodyBuilder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.WebRequest;
 
@@ -56,6 +57,14 @@ public class BankController {
 
             BankResponse response= bankService.addAdminBankInCorexfin(bankRequest, webRequest);
             return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+    @DeleteMapping("/delete/{bankId}")
+    public ResponseEntity<BankResponse> deleteBankFromCorexfinById(@PathVariable String bankId) {
+
+
+            BankResponse response= bankService.deleteBankFromCorexfinById(bankId);
+            System.out.println(response);
+        	return  ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
 
