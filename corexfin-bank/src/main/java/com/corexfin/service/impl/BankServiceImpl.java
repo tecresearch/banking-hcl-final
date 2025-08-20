@@ -18,7 +18,6 @@ import com.corexfin.model.Bank;
 import com.corexfin.repository.BankRepository;
 import com.corexfin.service.BankService;
 
-<<<<<<< HEAD
 import jakarta.persistence.EntityNotFoundException;
 
 import org.hibernate.Session;
@@ -37,8 +36,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-=======
->>>>>>> fa67fc435e4f891ddfe0878be18ef0ef0a60f9cb
 
 @Service
 public class BankServiceImpl implements BankService {
@@ -53,8 +50,6 @@ public class BankServiceImpl implements BankService {
     @Override
     public BankResponse addAdminBankInCorexfin(BankRequest bankRequest, WebRequest webRequest) {
        try {
-
-
 
            /**
             * Validate bankRequest body
@@ -194,10 +189,7 @@ public class BankServiceImpl implements BankService {
      */
     @Override
     public BankResponse deleteBankFromCorexfinById(String bankId) {
-<<<<<<< HEAD
-=======
 
->>>>>>> fa67fc435e4f891ddfe0878be18ef0ef0a60f9cb
     		try {
     			Optional<Bank> bankOptional=bankRepository.findById(bankId);
     			if(bankOptional.isEmpty()) {
@@ -256,11 +248,7 @@ public class BankServiceImpl implements BankService {
     			bankresponse_internal_server_error.setId(bankId);
 				return bankresponse_internal_server_error;
     		}
-<<<<<<< HEAD
 
-=======
-    		
->>>>>>> fa67fc435e4f891ddfe0878be18ef0ef0a60f9cb
     }
     /**
      * {@summary : This function delete a bank using bank ID. First we are getting the Bank by bank Id, if 
